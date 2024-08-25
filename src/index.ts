@@ -4,6 +4,7 @@ import simpleGit from "simple-git";
 import generate from "./utils";
 import path from "path";
 import {getAllFiles} from "./file";
+import {uploadFile} from "./aws";
 
 const app = express();
 app.use(cors());
