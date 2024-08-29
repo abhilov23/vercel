@@ -6,6 +6,8 @@ import path from "path";
 import {getAllFiles} from "./file";
 import {uploadFile} from "./aws";
 
+uploadFile("abhilov/package.json", "D:/Programs/reactJS/github/vercel/build/utils.js")
+
 const app = express();
 app.use(cors());
 app.use(express.json());

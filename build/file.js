@@ -12,7 +12,7 @@ const getAllFiles = (folderPath) => {
     allFilesAndFolders.forEach(file => {
         const fullFilePath = path_1.default.join(folderPath, file);
         if (fs_1.default.statSync(fullFilePath).isDirectory()) {
-            response = response.concat((0, exports.getAllFiles)(fullFilePath));
+            response = response.concat((0, exports.getAllFiles)(fullFilePath)); //it will return an array of the files location
         }
         else {
             response.push(fullFilePath);
